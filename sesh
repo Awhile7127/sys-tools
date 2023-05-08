@@ -1,0 +1,23 @@
+name=$1
+source_cmd="tmux source-file $HOME/.tmux_conf"
+
+if [[ "$name" == "main" ]]; then
+    cd $HOME;
+    tmux new-session -s 'main' -d;
+    $source_cmd;
+fi
+
+if [[ "$name" == "prog" ]]; then
+    cd $HOME/Programming_Projects;
+    tmux new-session -s 'prog' -d;
+    $source_cmd;
+fi
+
+if [[ "$name" == "ass" ]]; then
+    cd $HOME/Documents/Assessments;
+    tmux new-session -s 'ass' -n 'essay' -d;
+    tmux new-window -n 'structure';
+    tmux new-window -n 'sources';
+    tmux new-window -n 'data';
+    $source_cmd;
+fi

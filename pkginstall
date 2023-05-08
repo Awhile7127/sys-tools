@@ -1,0 +1,4 @@
+echo "Installing default packages..."
+while read line; do
+    tce-load -wi "$line"
+done < "$1"
