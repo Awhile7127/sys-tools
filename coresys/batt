@@ -1,3 +1,5 @@
+# Fetch the battery capacity and current status
+
 CAPACITY=$(cat /sys/class/power_supply/BAT0/capacity)
 STATUS=$(head -c 1 /sys/class/power_supply/BAT0/status)
 

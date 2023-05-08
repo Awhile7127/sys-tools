@@ -1,4 +1,8 @@
+# Config file for tmux
+
+# Enables vi hotkeys
 setw -g mode-keys vi
 
+# Edits the status bar to include battery and swatch time
 set -g status on
 set -g status-right "#($HOME/.local/bin/batt) #($HOME/.local/bin/ctime)"

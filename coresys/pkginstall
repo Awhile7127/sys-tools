@@ -1,3 +1,5 @@
+# Install tinycore packages listed as lines in a file
+
 echo "Installing default packages..."
 while read line; do
     tce-load -wi "$line"

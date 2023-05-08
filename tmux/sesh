@@ -1,6 +1,13 @@
+# Program to handle opening tailored tmux sessions
+
+# The name of the session to open
 name=$1
+
+# The command to load the tmux source file
+# Used as TC has issues defaulting to this file
 source_cmd="tmux source-file $HOME/.tmux_conf"
 
+# Open specific session
 if [[ "$name" == "main" ]]; then
     cd $HOME;
     tmux new-session -s 'main' -d;
