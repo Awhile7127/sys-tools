@@ -28,3 +28,9 @@ if [[ "$name" == "ass" ]]; then
     tmux new-window -n 'data';
     $source_cmd;
 fi
+
+if [[ "$name" == "work" ]]; then
+    cd $HOME/Documents/Work;
+    tmux new-session -s 'work' -d;
+    $source_cmd;
+fi
