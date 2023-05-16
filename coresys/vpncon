@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Handle connecting to OpenVPN using credentials from a file
+
+FILE="$HOME/Documents/vpn.ovpn"
+CREDS="$HOME/Documents/vpn_creds.txt"
+
+sudo openvpn --config $FILE --auth-user-pass $CREDS

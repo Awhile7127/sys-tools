@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Program to handle opening tailored tmux sessions
 
 # The name of the session to open
