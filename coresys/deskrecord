@@ -2,4 +2,4 @@
 
 # Record current display
 
-ffmpeg -video_size 1280x800 -framerate 25 -f x11grab -i :0.0+0,0 -f alsa -ac 2 -i hw:0 output.mkv
+ffmpeg -video_size 1280x800 -framerate 25 -f x11grab -i :0.0+0,0 -f alsa -ac 2 -i hw:0 "$1"
