@@ -1,0 +1,5 @@
+!#/bin/sh
+
+# Program to record audio via the command line
+
+arecord -vv -fdat track.wav
